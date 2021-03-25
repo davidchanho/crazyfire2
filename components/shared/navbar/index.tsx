@@ -1,5 +1,5 @@
 import React from "react";
-import { useAppContext } from "../../context";
+import { useAppContext } from "../../../context";
 
 function Navbar() {
   const { name } = useAppContext();

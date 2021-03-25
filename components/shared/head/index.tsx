@@ -1,6 +1,6 @@
 import NHead from "next/head";
 import React from "react";
-import { useAppContext } from "../../context";
+import { useAppContext } from "../../../context";
 
 function Head() {
   const { name } = useAppContext();
