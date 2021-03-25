@@ -9,6 +9,7 @@ function Head() {
     <NHead>
       <title>{name}</title>
       <link rel="icon" href="/favicon.ico" />
+      <meta lang="en" />
       <meta
         name="description"
         content="All you can eat Mongolian styled stir fry in Fayetteville, NC"

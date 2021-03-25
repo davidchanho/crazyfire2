@@ -26,10 +26,10 @@ function Address() {
       </a>
       <div className="flex">
         <a href={facebook} target="_blank">
-          <AiFillFacebook />
+          <AiFillFacebook aria-label="go to our Facebook page" />
         </a>
         <a href={yelp} target="_blank">
-          <FaYelp />
+          <FaYelp aria-label="go to our Yelp page" />
         </a>
       </div>
     </section>

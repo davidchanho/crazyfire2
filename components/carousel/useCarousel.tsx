@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useAppContext } from "../../context";
-import CarouselItem from "./CarouselItem";
 
 export const useCarousel = () => {
   const { heroCarousel } = useAppContext();
@@ -26,15 +25,5 @@ export const useCarousel = () => {
     );
   };
 
-  const renderCarousel = () => {
-    return heroCarousel.map((slide, index) => {
-      if (active === index) {
-        return <CarouselItem key={slide.name} {...slide} />;
-      }
-
-      return null;
-    });
-  };
-
-  return { handleRight, handleLeft, renderCarousel };
+  return { handleRight, handleLeft, heroCarousel, active };
 };
