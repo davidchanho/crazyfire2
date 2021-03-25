@@ -5,10 +5,6 @@ function Hero() {
   return (
     <section>
       <Carousel />
-      <div>
-        <button>left</button>
-        <button>left</button>
-      </div>
     </section>
   );
 }

@@ -3,15 +3,17 @@ import React from "react";
 interface Props {
   name: string;
   img: string;
-  handleClick: () => void;
 }
 
-function CarouselItem({ name, img, handleClick }: Props) {
+function CarouselItem({ name, img }: Props) {
   return (
-    <div onClick={handleClick}>
-      {name}
-      <img src={img} />
-    </div>
+    <img
+      className="mx-5 transition-opacity"
+      src={img}
+      alt={`picture of ${name}`}
+      width={650}
+      height={650}
+    />
   );
 }
 
