@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CItem from "./CItem";
+import CarouselItem from "./CarouselItem";
 
 function Carousel() {
   const [slides] = useState([
@@ -31,7 +31,7 @@ function Carousel() {
       {slides.map((slide, index) => {
         if (active === index) {
           return (
-            <CItem key={slide.name} {...slide} handleClick={handleClick} />
+            <CarouselItem key={slide.name} {...slide} handleClick={handleClick} />
           );
         }
 

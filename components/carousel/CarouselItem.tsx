@@ -1,12 +1,12 @@
 import React from "react";
 
-interface CItemProps {
+interface Props {
   name: string;
   img: string;
   handleClick: () => void;
 }
 
-function CItem({ name, img, handleClick }: CItemProps) {
+function CarouselItem({ name, img, handleClick }: Props) {
   return (
     <div onClick={handleClick}>
       {name}
@@ -15,4 +15,4 @@ function CItem({ name, img, handleClick }: CItemProps) {
   );
 }
 
-export default CItem;
+export default CarouselItem;

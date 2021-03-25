@@ -1,6 +1,6 @@
 import React from "react";
 import { useAppContext } from "../../context";
-import BHItem from "./BHItem";
+import BusinessHoursItem from "./BusinessHoursItem";
 
 function BusinessHours() {
   const { businessHours } = useAppContext();
@@ -9,7 +9,7 @@ function BusinessHours() {
     <table>
       <caption>Business Hours</caption>
       {businessHours.map((b) => {
-        return <BHItem key={b.day} {...b} />;
+        return <BusinessHoursItem key={b.day} {...b} />;
       })}
     </table>
   );

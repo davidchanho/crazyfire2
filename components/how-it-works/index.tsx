@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import HIWItem from "./HIWItem";
+import HowItWorksItem from "./HowItWorksItem";
 import {GiKnifeFork, GiSwordsPower} from 'react-icons/gi'
 import {CgBowl} from 'react-icons/cg'
 
@@ -14,7 +14,7 @@ function HowItWorks() {
     <section>
       <ul className="grid grid-cols-1 md:grid-cols-3">
         {items.map((item) => {
-          return <HIWItem key={item.id} {...item} />;
+          return <HowItWorksItem key={item.id} {...item} />;
         })}
       </ul>
     </section>

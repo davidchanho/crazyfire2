@@ -1,13 +1,13 @@
 import React from "react";
 import { formatTime } from "../../utils/helpers/formatTime";
 
-interface BHItemProps {
+interface Props {
   day: string;
   open: number | "CLOSED";
   close: number | "CLOSED";
 }
 
-function BHItem({ day, open, close }: BHItemProps) {
+function BusinessHoursItem({ day, open, close }: Props) {
   return (
     <tr>
       <th className="capitalize">{day}</th>
@@ -18,4 +18,4 @@ function BHItem({ day, open, close }: BHItemProps) {
   );
 }
 
-export default BHItem;
+export default BusinessHoursItem;
