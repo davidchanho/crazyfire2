@@ -2,6 +2,7 @@ import React from "react";
 import { CgBowl } from "react-icons/cg";
 import { GiKnifeFork, GiSwordsPower } from "react-icons/gi";
 import Section from "../shared/section";
+import SectionTitle from "../shared/section-title";
 import HowItWorksItem from "./HowItWorksItem";
 
 const items = [
@@ -16,7 +17,8 @@ const items = [
 
 function HowItWorks() {
   return (
-    <Section header="How it works">
+    <Section>
+      <SectionTitle>How it works</SectionTitle>
       <ul className="grid grid-cols-1 md:grid-cols-3">
         {items.map((item) => {
           return <HowItWorksItem key={item.id} {...item} />;

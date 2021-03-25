@@ -2,6 +2,8 @@ import React from "react";
 import { AiFillFacebook, AiFillPhone } from "react-icons/ai";
 import { FaYelp } from "react-icons/fa";
 import { useAppContext } from "../../context";
+import Section from "../shared/section";
+import SectionTitle from "../shared/section-title";
 
 function Address() {
   const {
@@ -11,8 +13,8 @@ function Address() {
   } = useAppContext();
 
   return (
-    <section className="flex flex-col items-center text-start">
-      <h3>Address</h3>
+    <Section id="address">
+      <SectionTitle>Address</SectionTitle>
       <address>
         <p>{street}</p>
         <p>Suite {suite}</p>
@@ -32,7 +34,7 @@ function Address() {
           <FaYelp aria-label="go to our Yelp page" />
         </a>
       </div>
-    </section>
+    </Section>
   );
 }
 

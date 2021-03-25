@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  scroll-behavior: smooth;
+}
+
 li > svg {
   width: 120px;
   height: 120px;
@@ -15,3 +19,4 @@ table {
 th {
   text-align: left;
 }
+

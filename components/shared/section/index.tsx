@@ -1,21 +1,11 @@
-import React, { ReactNode } from "react";
+import React, { HTMLAttributes, ReactNode } from "react";
 
-interface Props {
-  header: string;
+interface Props extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
 }
 
-function Section({ header, children }: Props) {
-  return (
-    <section>
-      <header>
-        <h2 className="text-center text-3xl font-bold underline mb-3 ">
-          {header}
-        </h2>
-      </header>
-      {children}
-    </section>
-  );
+function Section({ children, ...rest }: Props) {
+  return <section {...rest}>{children}</section>;
 }
 
 export default Section;
