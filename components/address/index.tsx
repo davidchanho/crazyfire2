@@ -25,10 +25,10 @@ function Address() {
         <AiFillPhone /> {phone}
       </a>
       <div className="flex">
-        <a href={facebook} target="_blank">
+        <a href={facebook} target="_blank" rel="noreferrer">
           <AiFillFacebook aria-label="go to our Facebook page" />
         </a>
-        <a href={yelp} target="_blank">
+        <a href={yelp} target="_blank" rel="noreferrer">
           <FaYelp aria-label="go to our Yelp page" />
         </a>
       </div>
