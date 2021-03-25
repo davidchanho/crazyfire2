@@ -13,6 +13,11 @@ function Head() {
         name="description"
         content="All you can eat Mongolian styled stir fry in Fayetteville, NC"
       />
+      <script>
+        {process.env.NODE_ENV == "production"
+          ? "window.__REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function(){}"
+          : ""}
+      </script>
     </NHead>
   );
 }
