@@ -8,7 +8,7 @@ function Layout({ children }: PropsWithChildren<{}>) {
     <div>
       <Head />
       <Navbar />
-      <main>{children}</main>
+      <main className="flex flex-col items-center">{children}</main>
       <Footer />
     </div>
   );

@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
+import { useAppContext } from "../../context";
 
 function Navbar() {
-    return (
-      <header>
-        <span>Crazy Fire Mongolian Grill</span>
-        <ul>
-          <li></li>
-        </ul>
-      </header>
-    );
+  const { name } = useAppContext();
+
+  return (
+    <header className="p-3">
+      <h3 className="text-center">{name}</h3>
+    </header>
+  );
 }
 
-export default Navbar
+export default Navbar;
