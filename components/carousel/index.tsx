@@ -1,40 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import CarouselItem from "./CarouselItem";
+import { useCarousel } from "./useCarousel";
 
 function Carousel() {
-  const [slides] = useState([
-    {
-      name: "b1",
-      img: "https://via.placeholder.com/650/FF0000",
-    },
-    {
-      name: "b2",
-      img: "https://via.placeholder.com/650/0000FF",
-    },
-    {
-      name: "b3",
-      img: "https://via.placeholder.com/650/008000",
-    },
-  ]);
-  const [active, setActive] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      handleRight();
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const handleLeft = () => {
-    setActive((active) => (active === 0 ? slides.length - 1 : active + 1));
-  };
-
-  const handleRight = () => {
-    setActive((active) => (active === slides.length - 1 ? 0 : active + 1));
-  };
-
+  const {
+    handleLeft,
+    handleRight,
+    renderCarousel,
+  } = useCarousel();
   return (
     <div className="w-full flex items-center justify-between">
       <button onClick={handleLeft}>
@@ -44,13 +17,7 @@ function Carousel() {
         />
       </button>
 
-      {slides.map((slide, index) => {
-        if (active === index) {
-          return <CarouselItem key={slide.name} {...slide} />;
-        }
-
-        return null;
-      })}
+      {renderCarousel()}
 
       <button onClick={handleRight}>
         <AiOutlineRight
