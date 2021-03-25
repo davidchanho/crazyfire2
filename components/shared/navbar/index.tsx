@@ -6,7 +6,7 @@ function Navbar() {
   const { name } = useAppContext();
 
   return (
-    <header className="p-3 flex items-center justify-between">
+    <header className="sticky top-0 bg-white p-3 flex items-center justify-between">
       <h3 className="text-center">{name}</h3>
       <nav>
         <ul className="flex">

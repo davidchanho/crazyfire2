@@ -8,9 +8,11 @@ function BusinessHours() {
   return (
     <table>
       <caption>Business Hours</caption>
-      {businessHours.map((b) => {
-        return <BusinessHoursItem key={b.day} {...b} />;
-      })}
+      <tbody>
+        {businessHours.map((b) => {
+          return <BusinessHoursItem key={b.day} {...b} />;
+        })}
+      </tbody>
     </table>
   );
 }
