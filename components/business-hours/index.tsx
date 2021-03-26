@@ -8,7 +8,7 @@ function BusinessHours() {
   const { businessHours } = useAppContext();
 
   return (
-    <Section id='hours'>
+    <Section>
       <SectionTitle>Business Hours</SectionTitle>
       <table>
         <tbody>

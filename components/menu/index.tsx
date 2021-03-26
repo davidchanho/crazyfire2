@@ -4,7 +4,7 @@ import SectionTitle from "../shared/section-title";
 
 function Menu() {
   return (
-    <Section id="menu">
+    <Section>
       <SectionTitle>Menu</SectionTitle>
       <table>
         <tbody>

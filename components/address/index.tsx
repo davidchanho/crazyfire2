@@ -13,7 +13,7 @@ function Address() {
   } = useAppContext();
 
   return (
-    <Section id="address">
+    <Section>
       <SectionTitle>Address</SectionTitle>
       <address>
         <p>{street}</p>
@@ -26,14 +26,14 @@ function Address() {
         {" "}
         <AiFillPhone /> {phone}
       </a>
-      <div className="flex">
-        <a href={facebook} target="_blank" rel="noreferrer">
-          <AiFillFacebook aria-label="go to our Facebook page" />
-        </a>
-        <a href={yelp} target="_blank" rel="noreferrer">
-          <FaYelp aria-label="go to our Yelp page" />
-        </a>
-      </div>
+      <a href={facebook} target="_blank" rel="noreferrer" className='flex items-end'>
+        <AiFillFacebook aria-label="go to our Facebook page" size={32} />
+        Facebook
+      </a>
+      <a href={yelp} target="_blank" rel="noreferrer" className='flex items-end'>
+        <FaYelp aria-label="go to our Yelp page" size={32} />
+        Yelp
+      </a>
     </Section>
   );
 }
