@@ -5,6 +5,7 @@ import Contact from "../components/contact";
 import HowItWorks from "../components/how-it-works";
 import Menu from "../components/menu";
 import Layout from "../components/shared/layout";
+import ScrollToTop from "../components/shared/scroll-to-top";
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
       <Address />
       <div id="contact" />
       <Contact />
+      <ScrollToTop />
     </Layout>
   );
 }

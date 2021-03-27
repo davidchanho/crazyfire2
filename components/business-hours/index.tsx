@@ -1,6 +1,7 @@
 import React from "react";
 import { useAppContext } from "../../context";
 import Section from "../shared/section";
+import SectionTitle from "../shared/section-title";
 import BusinessHoursItem from "./BusinessHoursItem";
 
 function BusinessHours() {
@@ -8,8 +9,8 @@ function BusinessHours() {
 
   return (
     <Section>
+      <SectionTitle>Business Hours</SectionTitle>
       <table className="w-5/12 m-auto">
-        <caption>Business Hours</caption>
         <tbody>
           {businessHours.map((b) => {
             return <BusinessHoursItem key={b.day} {...b} />;

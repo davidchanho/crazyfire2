@@ -32,38 +32,19 @@ export default function Contact() {
 
       <form onSubmit={handleSubmit(onSubmit)}>
         <label htmlFor="name">Name</label>
-        <input
-          type="text"
-          name="name"
-          ref={register}
-          aria-invalid={errors.name ? "true" : "false"}
-        />
+        <input className="border" type="text" name="name" ref={register} />
         <p>{errors.name?.message}</p>
 
         <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          ref={register}
-          aria-invalid={errors.email ? "true" : "false"}
-        />
+        <input className="border" type="email" name="email" ref={register} />
         <p>{errors.email?.message}</p>
 
         <label htmlFor="phone">Phone</label>
-        <input
-          type="text"
-          name="phone"
-          ref={register}
-          aria-invalid={errors.phone ? "true" : "false"}
-        />
+        <input className="border" type="text" name="phone" ref={register} />
         <p>{errors.phone?.message}</p>
 
         <label htmlFor="message">Message</label>
-        <textarea
-          name="message"
-          ref={register}
-          aria-invalid={errors.name ? "true" : "false"}
-        />
+        <textarea className="border" name="message" ref={register} />
         <p>{errors.message?.message}</p>
 
         <button type="reset">Reset</button>

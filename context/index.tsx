@@ -32,6 +32,7 @@ interface IAppState {
   businessHours: IBusinessHours[];
   socialMedia: ISocialMedia;
   heroCarousel: IHeroCarousel[];
+  links: string[];
 }
 
 const address: IAddress = {
@@ -72,6 +73,8 @@ const heroCarousel: IHeroCarousel[] = [
   },
 ];
 
+const links = ["menu", "hours", "address", "contact"];
+
 const AppState: IAppState = {
   name: "Crazy Fire Mongolian Grill",
   slogan: "Fire up the moment",
@@ -80,6 +83,7 @@ const AppState: IAppState = {
   businessHours,
   socialMedia,
   heroCarousel,
+  links,
 };
 
 const AppContext = createContext(AppState);

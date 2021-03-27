@@ -6,13 +6,17 @@ import SectionTitle from "../shared/section-title";
 import HowItWorksItem from "./HowItWorksItem";
 
 const items = [
-  { id: "hiw-1", title: "Grab a bowl and fill it up", icon: <CgBowl /> },
+  {
+    id: "hiw-1",
+    title: "Grab a bowl and fill it up",
+    icon: <CgBowl size={120} />,
+  },
   {
     id: "hiw-2",
     title: "Bring it to grill and enjoy the show",
-    icon: <GiSwordsPower />,
+    icon: <GiSwordsPower size={120} />,
   },
-  { id: "hiw-3", title: "Dig in!", icon: <GiKnifeFork /> },
+  { id: "hiw-3", title: "Dig in!", icon: <GiKnifeFork size={120} /> },
 ];
 
 function HowItWorks() {

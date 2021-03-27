@@ -7,22 +7,12 @@ body {
   margin: 0 auto;
 }
 
-li > svg {
-  width: 120px;
-  height: 120px;
-}
-
-table > caption,
-.section-title {
-  font-size: 26px;
-  font-weight: bold;
-  text-decoration: underline;
-  text-align: center;
-  margin-bottom: 12px;
-}
-
 table {
   width: 100%;
+  > caption {
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
 
   > tbody {
     width: 100%;
@@ -39,8 +29,3 @@ table {
   }
 }
 
-form {
-  input {
-    border: 1px solid #cfcfcf;
-  }
-}
