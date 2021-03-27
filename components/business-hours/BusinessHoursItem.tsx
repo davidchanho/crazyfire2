@@ -1,5 +1,5 @@
 import React from "react";
-import { formatTime } from "../../utils/helpers/formatTime";
+import useBusinessHours from "./useBusinessHours";
 
 interface Props {
   day: string;
@@ -8,12 +8,12 @@ interface Props {
 }
 
 function BusinessHoursItem({ day, open, close }: Props) {
+  const { renderTime } = useBusinessHours({ open, close });
+
   return (
     <tr>
       <th className="capitalize">{day}</th>
-      <td>
-        {formatTime(open)} - {formatTime(close)}
-      </td>
+      {renderTime()}
     </tr>
   );
 }

@@ -5,7 +5,11 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
 }
 
 function Section({ children, ...rest }: Props) {
-  return <section {...rest}>{children}</section>;
+  return (
+    <section className="py-28 w-9/12" {...rest}>
+      {children}
+    </section>
+  );
 }
 
 export default Section;
